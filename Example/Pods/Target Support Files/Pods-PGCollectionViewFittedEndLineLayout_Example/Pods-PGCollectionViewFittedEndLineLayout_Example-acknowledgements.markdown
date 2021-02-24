@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## PGCollectionViewFittedEndLineLayout
 
-Copyright (c) 2021 damon.p <damon.p@kg.xyz>
+Copyright (c) 2021 suwan.park <ipagong.dev@gmail.com.xyz>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

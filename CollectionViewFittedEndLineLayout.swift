@@ -2,7 +2,7 @@
 //  CollectionViewFittedEndLineLayout.swift
 //  PGCollectionViewFittedEndLineLayout
 //
-//  Created by kakao on 2021/02/24.
+//  Created by ipagong on 2021/02/24.
 //
 
 import UIKit

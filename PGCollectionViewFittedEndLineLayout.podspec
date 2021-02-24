@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/damon.p/PGCollectionViewFittedEndLineLayout'
+  s.homepage         = 'https://github.com/ipagong/PGCollectionViewFittedEndLineLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'damon.p' => 'damon.p@kg.xyz' }
-  s.source           = { :git => 'https://github.com/damon.p/PGCollectionViewFittedEndLineLayout.git', :tag => s.version.to_s }
+  s.author           = { 'ipagong' => 'ipagong.dev@gmail.com' }
+  s.source           = { :git => 'https://github.com/ipagong/PGCollectionViewFittedEndLineLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

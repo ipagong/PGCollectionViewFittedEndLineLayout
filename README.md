@@ -2,7 +2,7 @@
 
 Club House Interest horizontal layout
 
-[![CI Status](https://img.shields.io/travis/damon.p/PGCollectionViewFittedEndLineLayout.svg?style=flat)](https://travis-ci.org/damon.p/PGCollectionViewFittedEndLineLayout)
+[![CI Status](https://img.shields.io/travis/ipagong/PGCollectionViewFittedEndLineLayout.svg?style=flat)](https://travis-ci.org/ipagong/PGCollectionViewFittedEndLineLayout)
 [![Version](https://img.shields.io/cocoapods/v/PGCollectionViewFittedEndLineLayout.svg?style=flat)](https://cocoapods.org/pods/PGCollectionViewFittedEndLineLayout)
 [![License](https://img.shields.io/cocoapods/l/PGCollectionViewFittedEndLineLayout.svg?style=flat)](https://cocoapods.org/pods/PGCollectionViewFittedEndLineLayout)
 [![Platform](https://img.shields.io/cocoapods/p/PGCollectionViewFittedEndLineLayout.svg?style=flat)](https://cocoapods.org/pods/PGCollectionViewFittedEndLineLayout)
@@ -24,7 +24,7 @@ pod 'PGCollectionViewFittedEndLineLayout'
 
 ## Author
 
-damon.p, damon.p@kg.xyz
+suwan.park, ipagong.dev@gmail.com
 
 ## License
 

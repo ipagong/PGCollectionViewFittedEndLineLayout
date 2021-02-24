@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  PGCollectionViewFittedEndLineLayout
 //
-//  Created by damon.p on 02/24/2021.
-//  Copyright (c) 2021 damon.p. All rights reserved.
+//  Created by ipagong on 02/24/2021.
+//  Copyright (c) 2021 ipagong. All rights reserved.
 //
 
 import UIKit
