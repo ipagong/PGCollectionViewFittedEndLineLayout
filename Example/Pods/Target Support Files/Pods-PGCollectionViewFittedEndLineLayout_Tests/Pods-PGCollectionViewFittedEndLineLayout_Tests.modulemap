@@ -1,0 +1,6 @@
+framework module Pods_PGCollectionViewFittedEndLineLayout_Tests {
+  umbrella header "Pods-PGCollectionViewFittedEndLineLayout_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

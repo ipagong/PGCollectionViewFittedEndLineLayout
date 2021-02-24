@@ -1,0 +1,22 @@
+{
+  "name": "PGCollectionViewFittedEndLineLayout",
+  "version": "0.1.0",
+  "summary": "A short description of PGCollectionViewFittedEndLineLayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/damon.p/PGCollectionViewFittedEndLineLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "damon.p": "damon.p@kg.xyz"
+  },
+  "source": {
+    "git": "https://github.com/damon.p/PGCollectionViewFittedEndLineLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PGCollectionViewFittedEndLineLayout/Classes/**/*"
+}

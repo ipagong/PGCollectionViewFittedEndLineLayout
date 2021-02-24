@@ -1,0 +1,16 @@
+PODS:
+  - PGCollectionViewFittedEndLineLayout (0.1.0)
+
+DEPENDENCIES:
+  - PGCollectionViewFittedEndLineLayout (from `../`)
+
+EXTERNAL SOURCES:
+  PGCollectionViewFittedEndLineLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PGCollectionViewFittedEndLineLayout: 63101e0916af07b50243da48a1387cb1d5718050
+
+PODFILE CHECKSUM: 8412e81cd4bdaa1b9ec806d179ad064781d4b91e
+
+COCOAPODS: 1.10.1

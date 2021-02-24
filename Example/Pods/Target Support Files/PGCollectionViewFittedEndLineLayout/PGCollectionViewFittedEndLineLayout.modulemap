@@ -1,0 +1,6 @@
+framework module PGCollectionViewFittedEndLineLayout {
+  umbrella header "PGCollectionViewFittedEndLineLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
