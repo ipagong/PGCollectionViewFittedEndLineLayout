@@ -7,20 +7,21 @@
 //
 
 import UIKit
+import PGCollectionViewFittedEndLineLayout
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, FittedEndLineLayoutDelegate {
     var items: [String] = [
         "hello", "world", "bitcoin", "my house", "where is my house?", "hello world",
         "new world", "counter-strike", "valorant", "do something", "fps", "iOS", "swift", "Objcetive-C",
         "javascript", "send", "bird", "amazon", "github",
-        "hello", "world", "bitcoin", "my house", "where is my house?", "hello world",
-        "new world", "counter-strike", "valorant", "do something", "fps", "iOS", "swift", "Objcetive-C",
-        "javascript", "send", "bird", "amazon", "github",
-        
     ]
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
+            if let layout = self.collectionView.collectionViewLayout as? FittedEndLineLayout {
+                layout.delegate = self
+            }
+            
             self.collectionView.dataSource = self
             self.collectionView.delegate = self
         }
@@ -43,6 +44,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat { return 0.0 }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets { return .zero }
     
+    func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, numberOfRowInSection: Int) -> Int { 3 }
+
+    func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let value = self.items[indexPath.row]
+        let size = (value as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 17)])
+        return CGSize.init(width: size.width + 20, height: size.height + 10)
+    }
 }
 
 class ColorCell: UICollectionViewCell {
@@ -54,6 +62,7 @@ class ColorCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.cornerRadius = 10
+        self.label.layer.cornerRadius = 10
+        self.label.clipsToBounds = true
     }
 }

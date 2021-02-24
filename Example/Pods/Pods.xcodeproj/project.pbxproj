@@ -12,9 +12,8 @@
 		30F46AEF9A98E3E42B7729F803B5EBD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		353198744E9F6D2D7ACE61850CDBDCA1 /* Pods-PGCollectionViewFittedEndLineLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A03327E60224FEE8E6DE1F1D1B222BD /* Pods-PGCollectionViewFittedEndLineLayout_Tests-dummy.m */; };
 		4601E2E44E32BC510D9619A008B54BDF /* PGCollectionViewFittedEndLineLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5B0262288ACCD49B217459E4370432 /* PGCollectionViewFittedEndLineLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C29B1C2325E5E1C4002BFFF2 /* CollectionViewFittedEndLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B1C2225E5E1C4002BFFF2 /* CollectionViewFittedEndLineLayout.swift */; };
+		C25BDFCF25E608F2007851B7 /* FittedEndLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25BDFCE25E608F2007851B7 /* FittedEndLineLayout.swift */; };
 		C4AF141DB815F956698798A310757B94 /* Pods-PGCollectionViewFittedEndLineLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6234777170398E35746ED8DB8FD83CE /* Pods-PGCollectionViewFittedEndLineLayout_Example-dummy.m */; };
-		D597D8FA47C8B645322D293DD6F1A3F0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9671080C8DEA5EF37A7BD4D49D84B /* ReplaceMe.swift */; };
 		D6CA6782A67CD1F86268335885C383FD /* Pods-PGCollectionViewFittedEndLineLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A09206D94513BDAC8D84814589A3FF62 /* Pods-PGCollectionViewFittedEndLineLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F616A06AEBCFE05850EFB8B473A4BC78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FDEC0CDE72836A5D397274B6A87A78BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		01BAB39D158147046C59B90B764C050E /* PGCollectionViewFittedEndLineLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PGCollectionViewFittedEndLineLayout.modulemap; sourceTree = "<group>"; };
-		06F9671080C8DEA5EF37A7BD4D49D84B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PGCollectionViewFittedEndLineLayout/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		11C329564686CC81C60874763C8262F8 /* Pods-PGCollectionViewFittedEndLineLayout_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PGCollectionViewFittedEndLineLayout_Example-Info.plist"; sourceTree = "<group>"; };
 		16F62BEED131F3377A6D4DC745000FDA /* Pods-PGCollectionViewFittedEndLineLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PGCollectionViewFittedEndLineLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D88B89C2AD9C7BFF0603F74864D1D75 /* PGCollectionViewFittedEndLineLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGCollectionViewFittedEndLineLayout-prefix.pch"; sourceTree = "<group>"; };
@@ -63,7 +61,7 @@
 		9EB8FE6263191E3223362ADD0335EA07 /* Pods_PGCollectionViewFittedEndLineLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGCollectionViewFittedEndLineLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09206D94513BDAC8D84814589A3FF62 /* Pods-PGCollectionViewFittedEndLineLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PGCollectionViewFittedEndLineLayout_Example-umbrella.h"; sourceTree = "<group>"; };
 		A9A168CA7E6C0A4A8DA894EA22CD4E8A /* Pods-PGCollectionViewFittedEndLineLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PGCollectionViewFittedEndLineLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C29B1C2225E5E1C4002BFFF2 /* CollectionViewFittedEndLineLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFittedEndLineLayout.swift; sourceTree = "<group>"; };
+		C25BDFCE25E608F2007851B7 /* FittedEndLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FittedEndLineLayout.swift; path = PGCollectionViewFittedEndLineLayout/Classes/FittedEndLineLayout.swift; sourceTree = "<group>"; };
 		C50A364E1941A31076065CFA5851C15A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB4AEACD6C7320621B928373440F08C1 /* Pods-PGCollectionViewFittedEndLineLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PGCollectionViewFittedEndLineLayout_Example.modulemap"; sourceTree = "<group>"; };
 		CF33EC2F399F5DCC660718D2CB4E179D /* Pods-PGCollectionViewFittedEndLineLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PGCollectionViewFittedEndLineLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -217,8 +215,7 @@
 		D6C8021194E5BBE76A9FDB9EF9E8A80C /* PGCollectionViewFittedEndLineLayout */ = {
 			isa = PBXGroup;
 			children = (
-				06F9671080C8DEA5EF37A7BD4D49D84B /* ReplaceMe.swift */,
-				C29B1C2225E5E1C4002BFFF2 /* CollectionViewFittedEndLineLayout.swift */,
+				C25BDFCE25E608F2007851B7 /* FittedEndLineLayout.swift */,
 				C527BEB9C0748D5F4D5AC37AE1084C4F /* Pod */,
 				C3BFE0F96F6DFB252C93E35411078AD0 /* Support Files */,
 			);
@@ -320,6 +317,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					799A89830A182B8B815D96AD374A2BF5 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,9 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25BDFCF25E608F2007851B7 /* FittedEndLineLayout.swift in Sources */,
 				1C7B5FA3161126CA718EFBFC65776B4A /* PGCollectionViewFittedEndLineLayout-dummy.m in Sources */,
-				D597D8FA47C8B645322D293DD6F1A3F0 /* ReplaceMe.swift in Sources */,
-				C29B1C2325E5E1C4002BFFF2 /* CollectionViewFittedEndLineLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7CFF813360EC4F11D5D53816866AA64 /* PGCollectionViewFittedEndLineLayout.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -433,6 +435,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -574,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF29B4D1370314CA6A611F96D558853 /* PGCollectionViewFittedEndLineLayout.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
