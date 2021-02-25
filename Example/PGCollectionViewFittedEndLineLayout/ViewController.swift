@@ -50,6 +50,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let value = self.items[indexPath.row]
         let size = (value as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 17)])
         return CGSize.init(width: size.width + 20, height: size.height + 10)
+//        return nil
     }
 }
 

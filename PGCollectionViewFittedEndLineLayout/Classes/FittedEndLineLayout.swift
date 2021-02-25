@@ -24,7 +24,7 @@ public protocol FittedEndLineLayoutDelegate: class {
 }
 
 extension FittedEndLineLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, numberOfRowInSection: Int) -> Int { return 2 }
+    public func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, numberOfRowInSection: Int) -> Int { return 2 }
     public func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, minimumInteritemSpacingFor section: Int) -> CGFloat? { return nil }
     public func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, minimumLineSpacingFor section: Int) -> CGFloat? { return nil }
     public func collectionView(_ collectionView: UICollectionView, layout: FittedEndLineLayout, sectionInsetFor section: Int) -> UIEdgeInsets? { return nil }
@@ -36,8 +36,6 @@ extension FittedEndLineLayoutDelegate {
 }
 
 public class FittedEndLineLayout: UICollectionViewLayout {
-    public static let automaticSize: CGSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: .greatestFiniteMagnitude)
-
     public struct Const {
         static let minimumLineSpacing: CGFloat = 2.0
         static let minimumInteritemSpacing: CGFloat = 2.0
@@ -80,7 +78,7 @@ public class FittedEndLineLayout: UICollectionViewLayout {
     public var estimatedItemSize: CGSize = Const.estimatedItemSize {
         didSet { invalidateLayoutIfChanged(oldValue, estimatedItemSize) }
     }
-
+    
     private lazy var headersAttribute = [Int: UICollectionViewLayoutAttributes]()
     private lazy var footersAttribute = [Int: UICollectionViewLayoutAttributes]()
     private lazy var rowWidths = [[CGFloat]]()
@@ -117,9 +115,7 @@ public class FittedEndLineLayout: UICollectionViewLayout {
     public override var collectionViewContentSize: CGSize {
         guard let collectionView = collectionView, collectionView.numberOfSections > 0  else { return .zero }
         
-        var contentSize = collectionView.bounds.size
-        contentSize.width = rowWidths.last?.first ?? 0.0
-        return contentSize
+        return CGSize(width: rowWidths.last?.max() ?? 0, height: collectionView.bounds.height)
     }
 
     public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -231,12 +227,8 @@ extension FittedEndLineLayout {
             let itemWidth: CGFloat
             let itemSize = delegate.collectionView(collectionView, layout: self, sizeForItemAt: indexPath)
 
-            if itemSize == FittedEndLineLayout.automaticSize {
-                itemWidth = (cachedItemSizes[indexPath] ?? estimatedSizeForItemAt(indexPath)).width
-            } else {
-                cachedItemSizes[indexPath] = itemSize
-                itemWidth = itemSize.isValid == true ? floor(itemSize.width * _itemHeight / itemSize.height) : 0.0
-            }
+            cachedItemSizes[indexPath] = itemSize
+            itemWidth = itemSize.isValid == true ? floor(itemSize.width * _itemHeight / itemSize.height) : 0.0
 
             let offsetX: CGFloat = rowWidths[section][columnIndex]
 
@@ -324,4 +316,11 @@ extension FittedEndLineLayout {
 
 extension CGSize {
     fileprivate var isValid: Bool { self.height > 0 && self.width > 0 }
+}
+
+extension UICollectionViewCell {
+    fileprivate var fitIntrinsicContentSize: CGSize? {
+        self.sizeToFit()
+        return self.intrinsicContentSize
+    }
 }
